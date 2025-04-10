@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "polarity"
+version = "0.2.3"
+description = "Polarity es una herramienta ligera y eficiente para procesos ETL, diseñada específicamente para data engineers. Utiliza la potencia de Polars para el procesamiento de datos y la validación robusta de Pydantic para garantizar la calidad y consistencia de los datos."
+authors = ["JuanManiglia <juanmaniglia1989@gmail.com>", "JuanManiglia3a <jmaniglia@triplealpha.in>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/JuanManiglia/polarity"
+repository = "https://github.com/JuanManiglia/polarity"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polars = "^1.27.0"
+pydantic = "^2.10.6"
+python-dateutil = "^2.9.0.post0"
+
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.8"
+pytest = "^8.3.3"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
